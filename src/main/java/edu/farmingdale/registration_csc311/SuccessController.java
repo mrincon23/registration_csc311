@@ -5,11 +5,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 
+/**
+ * Controller for the success screen after registration.
+ */
 public class SuccessController {
 
     @FXML
     private Label successLabel;
 
+    /**
+     * Initializes the success screen with a fade-in animation for the label.
+     */
     @FXML
     public void initialize() {
         FadeTransition fadeIn = new FadeTransition(Duration.seconds(2), successLabel);
